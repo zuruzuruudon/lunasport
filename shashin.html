@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオギャラリー</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .gallery-item {
+            position: relative;
+        }
+
+        .gallery-item:hover::after {
+            content: "詳細を見る";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px;">ポートフォリオギャラリー</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="project1.html"><img src="project1.jpg" alt="プロジェクト1"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="project2.html"><img src="project2.jpg" alt="プロジェクト2"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="project3.html"><img src="project3.jpg" alt="プロジェクト3"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="project4.html"><img src="project4.jpg" alt="プロジェクト4"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="project5.html"><img src="project5.jpg" alt="プロジェクト5"></a>
+        </div>
+        <div class="gallery-item">
+            <a href="project6.html"><img src="project6.jpg" alt="プロジェクト6"></a>
+        </div>
+    </div>
+</body>
+</html>
